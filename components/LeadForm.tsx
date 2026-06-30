@@ -78,8 +78,8 @@ export default function LeadForm() {
             <path d="M20 6L9 17l-5-5" />
           </svg>
         </div>
-        <h3 className="text-2xl font-bold text-zinc-900 mb-2">Solicitação enviada!</h3>
-        <p className="text-zinc-500">Entraremos em contato em até 24 horas.</p>
+        <h3 className="text-2xl font-bold text-zinc-900 mb-2">Relato recebido!</h3>
+        <p className="text-zinc-500">Seu relato foi recebido e será verificado em breve.</p>
       </div>
     )
   }
@@ -173,7 +173,7 @@ export default function LeadForm() {
           value={fields.mensagem}
           onChange={handleChange}
           className="input-base resize-none"
-          placeholder="Descreva o que você precisa..."
+          placeholder="Descreva o problema ou irregularidade..."
         />
       </Field>
 
@@ -188,7 +188,7 @@ export default function LeadForm() {
         disabled={state === 'loading'}
         className="w-full bg-verde text-white font-bold py-4 text-base hover:bg-verde-escuro transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {state === 'loading' ? 'Enviando...' : 'Enviar solicitação'}
+        {state === 'loading' ? 'Enviando...' : 'Enviar relato'}
       </button>
     </form>
   )

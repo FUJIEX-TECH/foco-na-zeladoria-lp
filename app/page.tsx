@@ -28,16 +28,16 @@ export default function Home() {
             </div>
           </div>
           <h1 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.75rem)', fontWeight: 800, color: 'white', lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '1.25rem', textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-            Zeladoria profissional<br />na Avenida Miguel Yunes
+            Foco na zeladoria<br />da Av. Miguel Yunes
           </h1>
 
           <p style={{ fontSize: '1.125rem', color: 'rgba(255,255,255,0.95)', lineHeight: 1.7, maxWidth: '520px', marginBottom: '2.5rem', textShadow: '0 1px 4px rgba(0,0,0,0.6)' }}>
-            Condomínios, comércios e residências da região atendidos com agilidade, responsabilidade e sem complicação.
+            Viu um problema na região? Buraco, esgoto, iluminação, entulho: reporte aqui. Cada ocorrência é verificada e encaminhada para quem pode resolver.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="#formulario" className="bg-verde text-white font-bold px-8 py-4 text-base hover:bg-verde-escuro transition-colors">
-              Solicitar orçamento
+              Fazer uma denúncia
             </a>
             <a href={waLink} target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 text-base transition-colors"
@@ -59,12 +59,12 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
 
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-verde font-semibold text-sm tracking-widest uppercase mb-3">Por que a Foco na Zeladoria</p>
+            <p className="text-verde font-semibold text-sm tracking-widest uppercase mb-3">Como funciona</p>
             <h2 style={{ fontSize: 'clamp(1.25rem, 2.8vw, 2.25rem)', fontWeight: 700, color: '#1a1a1a', lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: '1rem', whiteSpace: 'nowrap' }}>
-              A zeladoria que a sua região precisa
+              Um canal aberto para a comunidade
             </h2>
             <p className="text-zinc-500 text-lg leading-relaxed">
-              A Av. Miguel Yunes concentra muitos condomínios e poucos profissionais que realmente conhecem a região. A gente resolve isso.
+              A Av. Miguel Yunes é a nossa região. Se tem algo irregular ou precisa de atenção, a gente quer saber.
             </p>
           </div>
 
@@ -73,20 +73,11 @@ export default function Home() {
               {
                 icon: (
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#617A35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
                   </svg>
                 ),
-                title: 'Manutenção das áreas comuns',
-                text: 'Jardins, garagens, halls e salões sempre conservados e em ordem.',
-              },
-              {
-                icon: (
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#617A35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
-                  </svg>
-                ),
-                title: 'Atendimento local e rápido',
-                text: 'Estamos na região. Quando surge um problema, chegamos sem demora.',
+                title: 'Reporte irregularidades',
+                text: 'Buraco na via, esgoto a céu aberto, entulho, iluminação quebrada. Qualquer problema da região pode ser reportado.',
               },
               {
                 icon: (
@@ -94,8 +85,17 @@ export default function Home() {
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                   </svg>
                 ),
-                title: 'Suporte direto ao síndico',
-                text: 'Comunicação direta, registro de ocorrências e sem intermediários.',
+                title: 'Mande fotos pelo WhatsApp',
+                text: 'A forma mais direta: manda uma mensagem com foto do problema direto no WhatsApp.',
+              },
+              {
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#617A35" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                  </svg>
+                ),
+                title: 'Cada relato é verificado',
+                text: 'Cada ocorrência é analisada e encaminhada para quem pode tomar providência. Sem burocracia.',
               },
             ].map((card) => (
               <div key={card.title} className="p-8 border border-zinc-100 hover:border-verde hover:shadow-md transition-all duration-200 group">
@@ -116,19 +116,19 @@ export default function Home() {
 
           {/* Coluna esquerda — copy */}
           <div className="lg:pt-2">
-            <p className="text-verde font-semibold text-sm tracking-widest uppercase mb-3">Contato</p>
+            <p className="text-verde font-semibold text-sm tracking-widest uppercase mb-3">Denúncia</p>
             <h2 style={{ fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 700, color: '#1a1a1a', lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: '1.25rem' }}>
-              Solicite um orçamento sem compromisso
+              Reporte um problema na região
             </h2>
             <p className="text-zinc-500 text-lg leading-relaxed mb-10">
-              Preencha o formulário e entraremos em contato em até 24 horas.
+              Descreva o que você viu. Cada relato é verificado e encaminhado para quem pode tomar providência.
             </p>
 
             <ul className="space-y-4 mb-10">
               {[
-                'Resposta em até 24 horas',
-                'Atendemos toda a região da Av. Miguel Yunes',
-                'Orçamento gratuito e sem compromisso',
+                'Cobre toda a região da Av. Miguel Yunes',
+                'Sem burocracia, sem custo',
+                'Canal direto de denúncia',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <div className="w-5 h-5 flex-shrink-0 mt-0.5">
@@ -145,7 +145,7 @@ export default function Home() {
             <a href={waLink} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-verde text-white font-bold px-7 py-4 text-base hover:bg-verde-escuro transition-colors">
               <WhatsAppIcon className="w-5 h-5" />
-              Prefere o WhatsApp?
+              Mandar fotos pelo WhatsApp
             </a>
           </div>
 
