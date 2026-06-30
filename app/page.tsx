@@ -27,11 +27,11 @@ export default function Home() {
               <Image src="/logo.jpeg" alt="Foco na Zeladoria" fill className="object-contain" priority />
             </div>
           </div>
-          <h1 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.75rem)', fontWeight: 800, color: 'white', lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '1.25rem' }}>
+          <h1 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.75rem)', fontWeight: 800, color: 'white', lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '1.25rem', textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
             Zeladoria profissional<br />na Avenida Miguel Yunes
           </h1>
 
-          <p style={{ fontSize: '1.125rem', color: 'rgba(255,255,255,0.78)', lineHeight: 1.7, maxWidth: '520px', marginBottom: '2.5rem' }}>
+          <p style={{ fontSize: '1.125rem', color: 'rgba(255,255,255,0.95)', lineHeight: 1.7, maxWidth: '520px', marginBottom: '2.5rem', textShadow: '0 1px 4px rgba(0,0,0,0.6)' }}>
             Condomínios, comércios e residências da região atendidos com agilidade, responsabilidade e sem complicação.
           </p>
 
