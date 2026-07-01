@@ -40,9 +40,9 @@ export async function POST(req: NextRequest) {
   // Enviar e-mail de notificação
   const numeroFormatado = `(${ddd}) ${whatsapp.slice(0, 5)}-${whatsapp.slice(5)}`
   const { error: emailError } = await resend.emails.send({
-    from: 'Foco na Zeladoria <leads@fujiextech.com.br>',
+    from: 'Foco na Zeladoria <onboarding@resend.dev>',
     to: [process.env.NOTIFICATION_EMAIL!],
-    subject: `Novo lead: ${nome} ${sobrenome}`,
+    subject: `Novo relato: ${nome} ${sobrenome}`,
     html: `
       <div style="font-family:sans-serif;max-width:520px;margin:0 auto;background:#0f0f0f;color:#fafafa;padding:32px;border-radius:8px;">
         <div style="background:#617A35;padding:4px 0;margin-bottom:24px;"></div>
