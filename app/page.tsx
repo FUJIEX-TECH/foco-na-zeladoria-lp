@@ -22,12 +22,10 @@ export default function Home() {
 
         {/* Logo + Headline + CTAs — grupo centralizado */}
         <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-3xl mx-auto">
-          <div className="mb-8" style={{ background: 'white', padding: '10px', display: 'inline-flex', boxShadow: '0 4px 20px rgba(0,0,0,0.28)' }}>
-            <div style={{ width: 160, height: 160, position: 'relative' }}>
-              <Image src="/logo.jpeg" alt="Foco na Zeladoria" fill className="object-contain" priority />
-            </div>
+          <div className="mb-4" style={{ width: 280, height: 280, position: 'relative' }}>
+            <Image src="/logo.svg" alt="Foco na Zeladoria" fill className="object-contain" priority />
           </div>
-          <h1 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.75rem)', fontWeight: 800, color: 'white', lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '1.25rem', textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 800, color: 'white', lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '1.25rem', textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
             Foco na zeladoria<br />da Av. Miguel Yunes
           </h1>
 
