@@ -91,7 +91,7 @@ export default function AdminLogin() {
 
           <div className="text-center pt-1">
             <a
-              href="https://wa.me/5511000000000?text=Preciso+redefinir+a+senha+do+admin+do+Foco+na+Zeladoria"
+              href="https://wa.me/5511976858031?text=Preciso+redefinir+a+senha+do+admin+do+Foco+na+Zeladoria"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-zinc-400 hover:text-verde transition-colors"

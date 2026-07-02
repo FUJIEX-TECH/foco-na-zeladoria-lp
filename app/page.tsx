@@ -2,7 +2,7 @@ import Image from 'next/image'
 import LeadForm from '@/components/LeadForm'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '5511000000000'
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '5511976858031'
 
 export default function Home() {
   const waLink = `https://wa.me/${WHATSAPP_NUMBER}`
