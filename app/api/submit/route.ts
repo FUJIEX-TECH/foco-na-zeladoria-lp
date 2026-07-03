@@ -60,7 +60,7 @@ export async function POST(req: NextRequest) {
             </tr>
             <tr style="border-bottom:1px solid #f3f4f6;">
               <td style="padding:12px 0;font-size:13px;color:#6b7280;">WhatsApp</td>
-              <td style="padding:12px 0;font-size:14px;color:#111827;">${numeroFormatado}</td>
+              <td style="padding:12px 0;font-size:14px;"><a href="https://wa.me/55${ddd}${whatsapp}" style="color:#617A35;font-weight:600;text-decoration:none;">${numeroFormatado}</a></td>
             </tr>
             <tr>
               <td style="padding:12px 0;font-size:13px;color:#6b7280;vertical-align:top;">Mensagem</td>
