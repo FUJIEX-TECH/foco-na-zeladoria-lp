@@ -44,16 +44,31 @@ export async function POST(req: NextRequest) {
     to: [process.env.NOTIFICATION_EMAIL!],
     subject: `Novo relato: ${nome} ${sobrenome}`,
     html: `
-      <div style="font-family:sans-serif;max-width:520px;margin:0 auto;background:#0f0f0f;color:#fafafa;padding:32px;border-radius:8px;">
-        <div style="background:#617A35;padding:4px 0;margin-bottom:24px;"></div>
-        <h2 style="margin:0 0 24px;font-size:20px;">Novo lead — Foco na Zeladoria</h2>
-        <table style="width:100%;border-collapse:collapse;">
-          <tr><td style="padding:8px 0;color:#aaa;width:120px;">Nome</td><td style="padding:8px 0;">${nome} ${sobrenome}</td></tr>
-          <tr><td style="padding:8px 0;color:#aaa;">E-mail</td><td style="padding:8px 0;">${email}</td></tr>
-          <tr><td style="padding:8px 0;color:#aaa;">WhatsApp</td><td style="padding:8px 0;">${numeroFormatado}</td></tr>
-          <tr><td style="padding:8px 0;color:#aaa;vertical-align:top;">Mensagem</td><td style="padding:8px 0;">${mensagem?.trim() || '(sem mensagem)'}</td></tr>
-        </table>
-        <p style="margin:24px 0 0;color:#666;font-size:12px;">Recebido via foconazeladoria.com.br</p>
+      <div style="font-family:Arial,sans-serif;max-width:520px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb;">
+        <div style="background:#617A35;padding:6px 0;"></div>
+        <div style="padding:32px;">
+          <p style="margin:0 0 4px;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#617A35;font-weight:600;">Foco na Zeladoria</p>
+          <h2 style="margin:0 0 24px;font-size:20px;color:#111827;font-weight:700;">Novo relato recebido</h2>
+          <table style="width:100%;border-collapse:collapse;">
+            <tr style="border-bottom:1px solid #f3f4f6;">
+              <td style="padding:12px 0;font-size:13px;color:#6b7280;width:110px;">Nome</td>
+              <td style="padding:12px 0;font-size:14px;color:#111827;font-weight:600;">${nome} ${sobrenome}</td>
+            </tr>
+            <tr style="border-bottom:1px solid #f3f4f6;">
+              <td style="padding:12px 0;font-size:13px;color:#6b7280;">E-mail</td>
+              <td style="padding:12px 0;font-size:14px;color:#111827;">${email}</td>
+            </tr>
+            <tr style="border-bottom:1px solid #f3f4f6;">
+              <td style="padding:12px 0;font-size:13px;color:#6b7280;">WhatsApp</td>
+              <td style="padding:12px 0;font-size:14px;color:#111827;">${numeroFormatado}</td>
+            </tr>
+            <tr>
+              <td style="padding:12px 0;font-size:13px;color:#6b7280;vertical-align:top;">Mensagem</td>
+              <td style="padding:12px 0;font-size:14px;color:#111827;line-height:1.6;">${mensagem?.trim() || '(sem mensagem)'}</td>
+            </tr>
+          </table>
+          <p style="margin:24px 0 0;font-size:12px;color:#9ca3af;">Recebido via foconazeladoria.com.br</p>
+        </div>
       </div>
     `,
   })
